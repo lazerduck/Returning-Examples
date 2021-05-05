@@ -9,12 +9,12 @@ namespace Returning_Examples
             return new DummyModel();
         }
 
-        public DummyModel GetReturnNull(string id)
+        public DummyModel? GetReturnNull(string id)
         {
             return null;
         }
 
-        public bool TryGetDummy(string id, out DummyModel model)
+        public bool TryGetDummy(string id, out DummyModel? model)
         {
             model = null;
             return false;
